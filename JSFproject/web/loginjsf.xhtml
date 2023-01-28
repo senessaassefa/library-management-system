@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+      <title>Facelet Title</title>
+        <style>
+            form{
+                padding-left: 200px;
+                padding-top: 10px;
+                padding-bottom: 800px;
+            }
+            a{
+                text-decoration: none;
+                position: relative;
+                border:solid;
+                left: 100px;
+                top:30px;
+            }
+            .lgn{
+                position: relative;
+                  border:solid;
+                left:150px;
+                font-size: 1.5rem;
+                color: green;
+            }
+            
+              
+        </style>
+    </h:head>
+    <h:body>
+         <style>
+            body{             
+             
+                background-image: url("resource/image/imm.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+        <!--<h:graphicImage value="resource/image/imm.jpg"></h:graphicImage>-->
+        <h:form>
+            <br>
+                <label class="lgn">login page</label>
+            </br>
+            
+            <br>
+             
+            <h:outputLabel value="user name"/>    
+            <h:inputText id="username"/>
+            </br>
+            <br>
+            <h:outputLabel value="password"/>
+            <h:inputSecret id="password"/>
+                </br>
+        
+           
+             <a href="userjsf1.xhtml">login </a>
+           <a href="adminjsf.xhtml">admin</a>
+            
+        </h:form>
+     
+    </h:body>
+</html>
+
+

@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <style>
+            .to{
+                text-decoration: none;
+                position: relative;
+                border:solid;
+                left: 200px;
+                top:30px;
+            }
+            .up{
+                text-decoration: none;
+                position: relative;
+                border:solid;
+                left: 200px;
+                top:10px;
+            }
+            .ad{
+                position: relative;
+                left:100px;
+                font-size: 1.4rem;
+                color: green;
+                top:20px
+            }
+            .upd{
+             position: relative;
+                left:25px;
+                font-size: 1.3rem;
+                color: #00cc33;
+                top:10px   
+            }
+            .dele{
+              position: relative;
+                left:250px;
+                font-size: 1.3rem;
+                color: #00cc33;
+                top:10px   
+            }
+            .de{
+                 text-decoration: none;
+                position: relative;
+                border:solid;
+                left: 200px;
+                top:10px;
+            }
+            .vi{
+                 text-decoration: none;
+                position: relative;
+                border:solid;
+                left: 200px;
+                top:10px;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <style>
+            body{
+                
+               background-color: red;
+                background-image: url("resource/image/img.jpg");
+                background-size: 100%
+            }
+        </style>
+        <h:form>
+    
+                <label class="to">TO ADD BOOK!!</label>
+          
+                <br>
+                    
+                </br>
+             
+            <h:outputLabel value="book name"/>    
+            <h:inputText id="book"/>
+            <br>
+            </br>
+            <h:outputLabel value="book id"/>
+            <h:inputText id="id"/>
+            <br>
+            </br>
+             <h:outputLabel value="author"/>    
+             <h:inputText id="author"/>
+                 <br>
+                 </br>
+            <button class="ad">add</button>
+                 <br>
+                </br>             
+             <br>
+            </br>
+           </h:form>
+    </h:body>
+</html>
+

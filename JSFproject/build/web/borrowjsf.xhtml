@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <style>
+            .bo{
+                 position: relative;
+                left:100px;
+                border: solid;
+                font-size: 1.4rem;
+                color: red;
+                top:10px
+            }
+            .ok{
+                 position: relative;
+                left:100px;
+                border: solid;
+                font-size: 1.4rem;
+                color:#00ff00;
+                top:10px
+            }
+            .ret{
+                 position: relative;
+                left:100px;
+                border: solid;
+                font-size: 1.4rem;
+                color: red;
+                top:10px
+            }
+            .retu{
+                 position: relative;
+                left:100px;
+                border: solid;
+                font-size: 1.4rem;
+                color:#ff00ff ;
+                top:10px
+            }
+            
+            
+        </style>
+    </h:head>
+    <h:body>
+         <style>
+            body{
+                
+                background-color:#00cc66;
+                background-image: url("resource/image/img.jpg");
+                background-size: 70%
+            }
+        </style>
+        <h:form>
+             <label class="bo">TO BORROW BOOK!!</label>
+          
+                <br>
+                    
+                </br>
+             
+            <h:outputLabel value="student name"/>    
+            <h:inputText id="std"/>
+            <br>
+            </br>
+            <h:outputLabel value="student id"/>
+            <h:inputText id="id"/>
+            <br>
+            </br>
+             <h:outputLabel value="book id"/>    
+             <h:inputText id="bokid"/>
+              <br>
+            </br>
+             <h:outputLabel value="date"/>    
+             <h:inputText id="tim"/>
+                 <br>
+                 </br>
+            <button class="ok">ok</button>
+                 <br>
+                 </br>
+        </h:form>
+    </h:body>
+</html>
+
