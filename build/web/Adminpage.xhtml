@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <style>
+            body{
+                background-color: #00cccc;
+                background-image: url("resource/image/lbm.jpg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            .to{
+                position: relative;
+                  border:solid;
+                left:150px;
+                font-size: 1.5rem;
+                color: #00cc99;
+            }
+            .btn{
+               
+                text-decoration: none;
+                position: relative;
+                border:solid;
+                left: 100px;
+                top:30px;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+           <label class="to">WELL COME TO OUR LIBRARY MANAGEMENT SYSTEM SIMPLE PROJCT!!</label> 
+           <br></br>
+         <label class="to">ADMIN PAGE!!</label>
+         <br></br>
+       <h:commandButton class="btn" value="USERINFORMATION" action="Userinfo"/>
+       <h:commandButton class="btn" value="BOOKINFORMATION" action="Bookinfo"/>
+       <h:commandButton class="btn" value="ABOUTBOOK" action="Bookissues"/>
+       </h:form>
+    </h:body>
+</html>
+

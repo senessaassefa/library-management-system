@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <style>
+            body{
+                background-color: aquamarine;
+            }
+            div{
+                margin-top: 30px;
+                margin-left: 200px;
+            }
+            body{
+                background-image: url("resource/image/ret.jpg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            .bt{
+                 margin-top: 10px;
+                margin-left: 100px;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+              <label class="vi">USER INFORMATION!!</label>
+          <br>             
+          </br>
+              <h:outputLabel class="bt" value="Frist name:"/>    
+            <h:inputText id="ttname"  value="#{adduser.fname}"/>
+            <br>
+            </br>
+             <h:outputLabel class="bt" value="Last name:"/>
+             <h:inputText id="ttid" value="#{adduser.lname}"/>
+           
+            <br>
+            </br> 
+        
+             <h:selectOneRadio class="bt" value="#{adduser.gender}">
+   	
+                <f:selectItem itemValue="male" itemLabel="male" />
+   	      <f:selectItem itemValue="female" itemLabel="female" />
+
+            </h:selectOneRadio>
+            <br></br>
+                
+                 <h:outputLabel value="Student id:"/>
+                 <h:inputText id="tttyid" value="#{adduser.studentid}"/>
+            <br></br>
+            <br>
+              
+            </br>
+            <div>
+             <h:outputLabel value="Department:"/>
+             <h:inputText id="ttdepd" value="#{adduser.department}"/>
+            <br></br>
+             <br></br>
+             <h:outputLabel value="College:"/>
+             <h:inputText id="ttind" value="#{adduser.college}"/>
+             <br></br>
+            </div>
+            <br></br>
+            <h:commandButton class="btn" value="add" action="#{adduser.userInsert()}" />
+             <h:commandButton class="btn" value="view"/>
+             <h:commandButton class="btn" value="delete" />
+             <h:commandButton class="btn" value="update"/>
+        </h:form>
+    </h:body>
+</html>
+

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>LIBRARY MANAGEMENT SYSTEM</title>
+        <style>
+            body{
+                background-color: #cc0099;
+                background-image: url("resource/image/ddd.jpg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </h:head>
+    <h:body>
+ <h:form>
+              <label class="vi">BOOK INFORMATION!!</label>
+          <br>             
+          </br>
+           <h:outputLabel value="Book name:" style="background-color:#33ff00"/>    
+           <h:inputText id="ttname" value="#{addbook.bookname}"/>
+            <br>
+            </br>
+            <h:outputLabel value="Author name:" style="background-color:#33ff00"/>
+            <h:inputText id="ttid" value="#{addbook.author}"/>
+            <br></br>
+            <h:outputLabel value="Book id:" style="background-color:#33ff00"/>
+            <h:inputText id="tttyid" value="#{addbook.bookid}"/>
+            <br>
+            </br> 
+             <h:outputLabel value="price:" style="background-color:#33ff00"/>
+             <h:inputText id="ttdepd" value="#{addbook.price}"/>
+           
+            <br></br>
+            <br></br>
+            <h:commandButton class="btn" value="add" action="#{addbook.bookInsert()}" />
+             <h:commandButton class="btn" value="view"/>
+             <h:commandButton class="btn" value="delete" />
+             <h:commandButton class="btn" value="update"/>
+             </h:form>
+    </h:body>
+</html>
+
