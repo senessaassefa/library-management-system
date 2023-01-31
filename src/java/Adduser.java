@@ -1,6 +1,8 @@
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import javax.faces.bean.ManagedBean;
@@ -90,12 +92,12 @@ public class Adduser {
             Adduser reg = new Adduser();
             DBConnection dbcon = new DBConnection();
             Connection con = dbcon.connMethod();
-            String sql = "Insert into ADDUSR(FIRSTNAME,LASTNAME,GENDER,STUDENTID,DEPARTMENT,COLLEGE) values(?,?,?,?,?,?)";
+            String sql = "Insert into ADDUSR(FIRSTNAME,LASTNAME,STUDENTID,GENDER,DEPARTMENT,COLLEGE) values(?,?,?,?,?,?)";
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, fname);
             ps.setString(2, lname);
-            ps.setString(3, gender);
-            ps.setString(4, studentid);
+            ps.setString(3, studentid);
+            ps.setString(4, gender);
             ps.setString(5, department);
             ps.setString(6, college);
     
@@ -106,5 +108,24 @@ public class Adduser {
             
         }
     }
-
+ public void delete() throws ClassNotFoundException, SQLException{
+    
+            
+          
+          Boolean status=false;
+            String query = "delete from ADDUSR where STUDENTID='"+studentid+"'";
+            DBConnection connection1 = new DBConnection();
+            Connection connection = connection1.connMethod();
+            Statement statement = null;
+            try {
+                statement = connection.createStatement();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+            try{
+                status=statement.execute(query);
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
 }

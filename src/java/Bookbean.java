@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import javax.faces.bean.ManagedBean;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -15,6 +16,7 @@ import java.util.List;
  *
  * @author margaa
  */
+@ManagedBean
 public class Bookbean {
     public List <Getbook> userfList;
        
@@ -30,7 +32,7 @@ public class Bookbean {
            DBConnection dbc = new DBConnection();
             Connection con = dbc.connMethod();
           
-             ResultSet resultset = con.createStatement().executeQuery("select * from USERPAGE ");
+             ResultSet resultset = con.createStatement().executeQuery("select * from ADDBOOK ");
                  while (resultset.next()) {
              
                 String bookname = resultset.getString("BOOKNAME");                             

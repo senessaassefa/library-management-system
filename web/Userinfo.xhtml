@@ -38,21 +38,18 @@
            
             <br>
             </br> 
+              <br></br>
+                
+                 <h:outputLabel value="Student id:"/>
+                 <h:inputText id="tttyid" value="#{adduser.studentid}"/>
         
              <h:selectOneRadio class="bt" value="#{adduser.gender}">
    	
                 <f:selectItem itemValue="male" itemLabel="male" />
    	      <f:selectItem itemValue="female" itemLabel="female" />
 
-            </h:selectOneRadio>
+            </h:selectOneRadio>      
             <br></br>
-                
-                 <h:outputLabel value="Student id:"/>
-                 <h:inputText id="tttyid" value="#{adduser.studentid}"/>
-            <br></br>
-            <br>
-              
-            </br>
             <div>
              <h:outputLabel value="Department:"/>
              <h:inputText id="ttdepd" value="#{adduser.department}"/>
@@ -64,8 +61,8 @@
             </div>
             <br></br>
             <h:commandButton class="btn" value="add" action="#{adduser.userInsert()}" />
-             <h:commandButton class="btn" value="view"/>
-             <h:commandButton class="btn" value="delete" />
+            <h:commandButton class="btn" value="view" action="Retusertb"/>
+             <h:commandButton class="btn" value="delete" action="#{adduser.delete()}" />
              <h:commandButton class="btn" value="update"/>
         </h:form>
     </h:body>
