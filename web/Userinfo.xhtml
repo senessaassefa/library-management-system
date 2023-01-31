@@ -21,6 +21,26 @@
             .bt{
                  margin-top: 10px;
                 margin-left: 100px;
+                color: #cc0099;
+                font-size:30px;
+            font-family:fantasy;
+            }
+            .btn{
+                font-size:10px;
+  font-family:fantasy;
+  width:100px;
+  height:70px;
+  border-width:1px;
+  color:red;
+  border-color:#00cccc;
+  font-weight:bold;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  box-shadow:inset 0px 1px 0px 0px #00ff00;
+  text-shadow:inset 0px 1px 0px #ffee66;
+  background:linear-gradient(#00ffcc, #ffab23);
             }
         </style>
     </h:head>
@@ -40,9 +60,11 @@
             </br> 
               <br></br>
                 
-                 <h:outputLabel value="Student id:"/>
+              <h:outputLabel class="bt" value="Student id:"/>
                  <h:inputText id="tttyid" value="#{adduser.studentid}"/>
-        
+                 <b></b>
+                 <br></br>
+                 <h:outputLabel class="bt" value="gender:"/>
              <h:selectOneRadio class="bt" value="#{adduser.gender}">
    	
                 <f:selectItem itemValue="male" itemLabel="male" />
@@ -51,11 +73,11 @@
             </h:selectOneRadio>      
             <br></br>
             <div>
-             <h:outputLabel value="Department:"/>
+                <h:outputLabel class="bt" value="Department:"/>
              <h:inputText id="ttdepd" value="#{adduser.department}"/>
             <br></br>
              <br></br>
-             <h:outputLabel value="College:"/>
+             <h:outputLabel class="bt" value="College:"/>
              <h:inputText id="ttind" value="#{adduser.college}"/>
              <br></br>
             </div>

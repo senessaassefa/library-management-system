@@ -15,20 +15,42 @@
                 background-color: #07f7f7;
              border-color: red;
               padding: 20px 40px;
-              font-size: 30px;
-               font-family:fantasy;
+              font-size: 20px;
+               font-family:Arial;
               left: 600px;
               top: 400px;
-              box-shadow:inset 1px 1px 1px 0px #00ff00;
-              box-shadow: 0 2px 50px rgba(0,0,0,.5);
+              width:70px;
+  height:50px;
+  border-width:1px;
+  color:#ffee66;
+  border-color:#ff0000;
+  font-weight:bold;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  box-shadow:inset 0px 1px 0px 0px #00ff00;
+  text-shadow:inset 0px 1px 0px #ffee66;
+    background:linear-gradient(#00ffcc, #ffab23);
+            }
+            form{
+                background-color: #07f7f7;
+             border-color: red;
+              padding: 30px 60px;
+              font-size: 10px;
+               font-family:Arial;
+           margin-left:400px;
+            margin-top:40px;
+              width:70px;  
             }
         </style>
     </h:head>
     <h:body>
- <h:form>
-              <label class="vi">BOOK INFORMATION!!</label>
+
+              <label class="btn">BOOK INFORMATION!!</label>
           <br>             
           </br>
+               <h:form>
            <h:outputLabel value="Book name:" style="background-color:#33ff00"/>    
            <h:inputText id="ttname" value="#{addbook.bookname}"/>
             <br>

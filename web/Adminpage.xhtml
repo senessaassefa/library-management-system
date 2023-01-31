@@ -7,7 +7,7 @@
         <style>
             body{
                 background-color: #00cccc;
-                background-image: url("resource/image/lbm.jpg");
+                background-image: url("resource/image/boo.jpg");
                 background-size: 100%;
                 background-repeat: no-repeat;
             }
@@ -17,25 +17,52 @@
                 left:150px;
                 font-size: 1.5rem;
                 color: #00cc99;
+                font-size:30px;
+  font-family:fantasy;
+  width:100px;
+  height:70px;
             }
             .btn{
                
-                text-decoration: none;
-                position: relative;
-                border:solid;
-                left: 100px;
-                top:30px;
+          
+  font-size:18px;
+  font-family:fantasy;
+  width:100px;
+  height:70px;
+  border-width:1px;
+  color:red;
+  border-color:#ff0000;
+  font-weight:bold;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  border-bottom-left-radius:30px;
+  border-bottom-right-radius:30px;
+  box-shadow:inset 0px 1px 0px 0px #00ff00;
+  text-shadow:inset 0px 1px 0px #ffee66;
+    background:linear-gradient(#00ffcc, #ffab23);
+            }
+            form{
+               margin-left: 200px;
+               margin-top: 30px;
             }
         </style>
     </h:head>
     <h:body>
-        <h:form>
+   
            <label class="to">WELL COME TO OUR LIBRARY MANAGEMENT SYSTEM SIMPLE PROJCT!!</label> 
            <br></br>
          <label class="to">ADMIN PAGE!!</label>
          <br></br>
+         <br></br>
+          <h:form>
        <h:commandButton class="btn" value="USERINFORMATION" action="Userinfo"/>
+       <br></br>
+       <br></br>
+       <br></br>
        <h:commandButton class="btn" value="BOOKINFORMATION" action="Bookinfo"/>
+       <br></br>
+       <br></br>
+       <br></br>
        <h:commandButton class="btn" value="ABOUTBOOK" action="Bookissues"/>
        </h:form>
     </h:body>
