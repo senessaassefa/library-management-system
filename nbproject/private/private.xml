@@ -5,15 +5,17 @@
         <group>
             <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/src/java/DBConnection.java</file>
             <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/web/adduser.xhtml</file>
-            <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/web/Adminpage.xhtml</file>
-            <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/web/Userinfo.xhtml</file>
+            <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/web/Retbooktb.xhtml</file>
             <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/src/java/Login.java</file>
             <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/web/index.xhtml</file>
             <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/src/java/Adduser.java</file>
-            <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/src/java/Addbook.java</file>
-            <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/web/Userpage.xhtml</file>
             <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/src/java/Getbook.java</file>
             <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/src/java/Bookbean.java</file>
+            <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/web/Adminpage.xhtml</file>
+            <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/web/Userinfo.xhtml</file>
+            <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/web/User.xhtml</file>
+            <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/src/java/Addbook.java</file>
+            <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/web/Userpage.xhtml</file>
             <file>file:/C:/Users/margaa/Documents/NetBeansProjects/FinalProject/web/Bookinfo.xhtml</file>
         </group>
     </open-files>

@@ -128,4 +128,26 @@ public class Adduser {
                 throw new RuntimeException(e);
             }
         }
+   public void update() {
+      
+        try {
+            
+            Adduser reg = new Adduser();
+            DBConnection dbcon = new DBConnection();
+            Connection con = dbcon.connMethod();
+            String sql = "update ADDUSR set FIRSTNAME=?,LASTNAME=?,GENDER=?,DEPARTMENT=?,COLLEGE=? where STUDENTID=?";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, fname);
+            ps.setString(2, lname);         
+            ps.setString(3, gender);
+            ps.setString(4, department);
+            ps.setString(5, college);
+            ps.setString(6, studentid);
+            ps.executeUpdate();
+           
+            System.err.println("success");
+        } catch (Exception e) {
+            
+        } 
+}
 }

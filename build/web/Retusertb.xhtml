@@ -5,53 +5,69 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Facelet Title</title>
+        <style>
+             body{
+                background-image: url("resource/image/st.jpg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+             .ADDUSR{
+                margin-top: 10px;
+                margin-left: 100px;
+                color: #009900;
+                font-size:25px;
+            font-family:fantasy;
+            }
+        </style>
     </h:head>
     <h:body>
-  
-<h:dataTable id="USERTABLE" class="ADDUSR" value="#{Userbean.getuserinformation()}" var="data">
+        <h:form>
+<h:dataTable id="USERTABLE" class="ADDUSR" value="#{userbean.getuserinformation()}" var="dat">
             
               <h:column>
                 <f:facet name="header">
                     fname 
                 </f:facet>
-                <h:outputText value="#{data.fname}"/>  
+                <h:outputText value="#{dat.fname}"/>  
 
             </h:column>
               <h:column>
                 <f:facet name="header">
                    lname
                 </f:facet>
-                <h:outputText value="#{data.lname}"/>  
+                <h:outputText value="#{dat.lname}"/>  
 
             </h:column>
               <h:column>
                 <f:facet name="header">
                  studentid
                 </f:facet>
-                <h:outputText value="#{data.studentid}"/>  
+                <h:outputText value="#{dat.studentid}"/>  
 
-            </h:column>  <h:column>
+            </h:column> 
+              <h:column>
                 <f:facet name="header">
                                 gender
                 </f:facet>
-                <h:outputText value="#{data.gender}"/>  
+                <h:outputText value="#{dat.gender}"/>  
 
             </h:column>     
              <h:column>
                 <f:facet name="header">
                    department
                 </f:facet>
-                <h:outputText value="#{data.department}"/>  
+                <h:outputText value="#{dat.department}"/>  
 
             </h:column>     
              <h:column>
                 <f:facet name="header">
                    college
                 </f:facet>
-                <h:outputText value="#{data.college}"/>  
+                <h:outputText value="#{dat.college}"/>  
 
             </h:column>     
       </h:dataTable>
+            </h:form>
     </h:body>
 </html>
 

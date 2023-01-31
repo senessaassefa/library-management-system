@@ -14,14 +14,14 @@
                 margin-left: 200px;
             }
             body{
-                background-image: url("resource/image/ret.jpg");
+                background-image: url("resource/image/rb.jpg");
                 background-size: 100%;
                 background-repeat: no-repeat;
             }
             .bt{
                  margin-top: 10px;
                 margin-left: 100px;
-                color: #cc0099;
+                color: blue;
                 font-size:30px;
             font-family:fantasy;
             }
@@ -42,6 +42,14 @@
   text-shadow:inset 0px 1px 0px #ffee66;
   background:linear-gradient(#00ffcc, #ffab23);
             }
+            .vi{
+                margin-top: 10px;
+                margin-left: 100px;
+                color: #009900;
+                font-size:40px;
+            font-family:fantasy;
+            }
+            
         </style>
     </h:head>
     <h:body>
@@ -85,7 +93,7 @@
             <h:commandButton class="btn" value="add" action="#{adduser.userInsert()}" />
             <h:commandButton class="btn" value="view" action="Retusertb"/>
              <h:commandButton class="btn" value="delete" action="#{adduser.delete()}" />
-             <h:commandButton class="btn" value="update"/>
+             <h:commandButton class="btn" value="update" action="#{adduser.update()}"/>
         </h:form>
     </h:body>
 </html>

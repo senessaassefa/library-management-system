@@ -30,20 +30,33 @@
                 background-repeat: no-repeat; 
             }
             .ADDBOOK{
-                font-family:fantasy;
+                 font-family:fantasy;
+  width:150px;
+  height:90px;
+  border-width:1px;
+  color:red;
+  border-color:green;
+  font-weight:inherit;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  box-shadow:inset 0px 1px 0px 0px #00ff00;
+  text-shadow:inset 0px 1px 0px #ffee66;
+  background:linear-gradient(red, #ffab23);
+                font-family:normal;
   width:60px;
   height:50px;
   border-width:1px;
-  color:#000000;
+  color:green;
   border-color:#00cccc;
   font-weight:inherit;;
-            }
-            
+            }           
         </style>
     </h:head>
     <h:body>
         <h:form>
-<h:dataTable id="USERTABLE" class="ADDBOOK" value="#{bookbean.getuserinformation()}" var="data">
+<h:dataTable id="BOOKTABLE" class="ADDBOOK" value="#{bookbean.getuserinformation()}" var="data">
     <div>
               <h:column>
                 <f:facet name="header">

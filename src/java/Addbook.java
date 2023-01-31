@@ -97,4 +97,26 @@ public class Addbook {
                 throw new RuntimeException(e);
             }
         }
+  public void update() {
+        //List<FirstManagedBean> list = new ArrayList<>();
+        try {
+            
+            Adduser reg = new Adduser();
+            DBConnection dbcon = new DBConnection();
+            Connection con = dbcon.connMethod();
+            String sql = "update ADDBOOK set BOOKNAME=?,AUTHOR=?,PRICE=? where BOOKID=?";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, bookname);
+            ps.setString(2, author);
+            ps.setDouble(3, price);
+        
+            ps.setString(4, bookid);
+    
+            ps.executeUpdate();
+           
+            System.err.println("success");
+        } catch (Exception e) {
+            
+        }
+}
 }
