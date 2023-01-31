@@ -8,26 +8,45 @@
  
         <style>
             form{
-                padding-left: 200px;
+                padding-left: 100px;
                 padding-top: 10px;
-                padding-bottom: 800px;
-            }
-            a{
-                text-decoration: none;
-                position: relative;
-                border:solid;
-                left: 100px;
-                top:30px;
+              //  padding-bottom: 800px;
             }
             .lgn{
+                text-decoration: none;
                 position: relative;
-                  border:solid;
-                left:150px;
-                font-size: 1.5rem;
-                color: #00cc99;
+                color:#000000; 
+                border:solid;
+                left: 100px;
+                top:5px;
+                font-size:20px;
+  font-family:fantasy;
+  width:140px;
+  height:70px;
+  border-width:1px;
+            }
+            .btn{
+  font-size:30px;
+  font-family:fantasy;
+  width:100px;
+  height:70px;
+  border-width:1px;
+  color:red;
+  border-color:#00cccc;
+  font-weight:bold;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  box-shadow:inset 0px 1px 0px 0px #00ff00;
+  text-shadow:inset 0px 1px 0px #ffee66;
+  background:linear-gradient(#00ffcc, #ffab23);
             }
             
-              
+            div{
+                font-size:20px;
+  font-family:fantasy;
+   
         </style>
     </h:head>
     <h:body>
@@ -35,26 +54,27 @@
             body{             
              
                 background-image: url("resource/image/jj.jpg");
-                background-size: 80%;
+                background-size: 100%;
                 background-repeat: no-repeat;
             }
         </style>
         <!--<h:graphicImage value="resource/image/imm.jpg"></h:graphicImage>-->
         <h:form>
+            <label class="btn">WELL COME TO OUR LIBRARY MANAGEMENT SYSTEM SIMPLE PROJCT!!</label> 
             <br>
-                <label class="lgn">login page </label>
+                <label class="lgn">LOGIN PAGE </label>
             </br>
             
-            <br>
-             
+            
+                <div>
             <h:outputLabel value="username" style="background-color:#33ff00"/>    
             <h:inputText id="username" value="#{login.user}"/>
-            </br>
             <br>
+            </br>
             <h:outputLabel value="password" style="background-color:#33ff00"/>
             <h:inputSecret id="password" value="#{login.pwd}"/>
-                </br>
-        
+            
+            </div>
             <h:commandButton class="btn" value="login" style="background-color:#33ff00" action="#{login.login}" />
             <h:commandButton class="btn" value="user" style="background-color:#33ff00" action="Userpage"/>
       
